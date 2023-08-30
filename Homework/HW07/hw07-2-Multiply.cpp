@@ -75,3 +75,32 @@
         6 x 9 = 54
 
 */
+#include <stdio.h>
+
+int main(){
+    
+    int str ;
+    int end ; 
+    int i   ;
+    int o   ;
+
+    printf( "Start :\n" ) ;
+    scanf( "%d",&str ) ;
+
+    printf("End :\n");
+    scanf("%d",&end);
+
+    i = str ;
+
+    while ( i <= end ) {
+        o = 1 ;
+        while (o <= 9){
+
+            printf( "%d x %d = %d\n", i, o, i*o ) ;
+            o++ ;
+        }
+        i++ ;
+        printf("\n") ;
+    }
+    return 0 ;
+}
